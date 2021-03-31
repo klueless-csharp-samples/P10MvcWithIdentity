@@ -1,0 +1,20 @@
+﻿@model P10MvcWithIdentity.Models.Person
+@{
+    ViewData["Title"] = "Person";
+}
+
+<h1>People</h1>
+<hr />
+
+
+  <ul>
+  <li>Id:  @Html.DisplayFor(model => model.Id)</li>
+  
+  <li>First Name: @Html.DisplayFor(model => model.FirstName)</li>
+  <li>Last Name: @Html.DisplayFor(model => model.LastName)</li>
+  
+  <li>Age: @Html.DisplayNameFor(model => model.Age)</li>
+  </ul>
+  
+</table>
+</dl>
