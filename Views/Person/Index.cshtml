@@ -1,0 +1,38 @@
+﻿@model IReadOnlyCollection<P10MvcWithIdentity.Models.Person>
+@{
+    ViewData["Title"] = "People";
+}
+
+<h1>People</h1>
+<table border='1'>
+  <tr>
+  <th>ID</th>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Age</th>
+  <th>Actions</th>
+  <tbody>
+
+@foreach (var p in Model)
+{
+  <tr>
+  <td>@p.Id</td>
+  <td>@p.FirstName</td>
+  <td>@p.LastName</td>
+  <td>@p.Age</td>
+  <td>
+    <a asp-action="Details" asp-route-id="@p.Id">
+      Details
+    </a>
+  </td>
+  </tr>
+}
+
+  </tbody>
+</table>
+
+<hr />
+
+<a asp-action="Index">
+  Back to List
+</a>
