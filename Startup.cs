@@ -28,7 +28,7 @@ namespace P10MvcWithIdentity
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-          string connectionString = "Server=localhost,1433; Database=P10;User=sa; Password=Hambaro3";
+          string connectionString = "Server=localhost,1433; Database=P10;User=sa; Password=hamword";
 
             services.AddDbContext<ApplicationDbContext>(options =>
                 // options.UseSqlite(
